@@ -1,83 +1,89 @@
 # static-website-azure-blob
 Hosting first Static Website with Azure
-🚀 Azure Blob Static Website (Super Simple Guide)
 
-🎥 Watch this first (quick walkthrough):
-👉 https://www.loom.com/share/3414d32d8585444197ffe09edde77fef
+🚀 Azure Static Website Lab (Blob Storage)
 
-🧠 What is this?
+🎥 Quick Walkthrough
+https://www.loom.com/share/3414d32d8585444197ffe09edde77fef
 
-This is a super simple static website hosted using:
+🎯 Objective
 
-Microsoft Azure Blob Storage
-HTML, CSS, JavaScript
-No servers needed
+Deploy your first public website in Azure using:
 
-Think of it like:
+☁️ Azure Blob Storage
+⚡ Serverless hosting
+🧱 PaaS (no servers needed)
 
-putting website files into a magic online folder ☁️
+You focus on the website — Azure handles everything else
 
-📁 What’s inside this repo?
-index.html   → the main page
-styles.css   → makes it look nice
-script.js    → adds small interactions
-404.html     → error page
-🧒 Step-by-step (explained like you're 5)
-🟢 Step 1 — Download these files
-
-Click the green Code button → Download ZIP
-OR clone the repo
-
-🟢 Step 2 — Go to Azure
-
-Open Microsoft Azure
-
-🟢 Step 3 — Create a Storage Account
-
-Search: Storage Accounts
-Click Create
-
-🟢 Step 4 — Turn on Static Website
-
-Inside your storage account:
-
-Click Static website
-Turn it ON
-
-Fill in:
-
-Index document name: index.html
-Error document path: 404.html
-
-Click Save
-
-🟢 Step 5 — Find the magic folder
-
-Azure creates a special container called:
-
-$web
-🟢 Step 6 — Upload your files
-
-Upload ALL of these into $web:
-
+🧠 Architecture
+Internet User
+     ↓
+Public URL
+     ↓
+Storage Account
+     ↓
+$web container
+     ↓
 index.html
-styles.css
-script.js
-404.html
-🟢 Step 7 — Open your website 🎉
+⚙️ Requirements
+Azure account (Free Tier OK)
+Text editor (Notepad / VS Code)
+🧾 Naming Standard
+Resource Group: rg-lab01-[yourname]
+Storage Account: stlab01[yourname]
+Region: East US
 
-Azure gives you a link like:
+⚠️ Must be:
 
-https://yourstorage.z13.web.core.windows.net/
+lowercase
+globally unique
+🛠️ Deployment Steps
+1️⃣ Create Resource Group
+Go to: https://portal.azure.com
+Resource Groups → Create
+Name: rg-lab01-[yourname]
+2️⃣ Create Storage Account
+Storage Accounts → Create
+Name: stlab01[yourname]
+Performance: Standard
+Redundancy: LRS
+3️⃣ Enable Static Website
+Open Static website
+Enable it
+Index: index.html
+Error: 404.html
 
-Click it → your site is LIVE
+📌 Copy your Primary Endpoint URL
 
-⚠️ VERY IMPORTANT
+4️⃣ Create Your Site
 
-File names must match EXACTLY:
+Save as index.html:
 
-index.html  ✅
-Index.html  ❌
-INDEX.HTML ❌
+<h1>🚀 Hello from the Cloud!</h1>
+<p>This site is hosted on Azure Blob Storage.</p>
+5️⃣ Upload Files
+Go to Containers
+Open $web
+Upload index.html
+6️⃣ Validate
+Open your URL
+Your site should be live 🎉
+⚠️ Troubleshooting
 
-Azure is case-sensitive.
+404 error
+
+Must be index.html (exact name)
+Must be inside $web
+
+Storage name taken
+
+Add numbers → stlab01john99
+🧹 Clean Up
+Resource Groups
+Select your group
+Delete
+
+Blob Storage
+Static hosting
+No infrastructure
