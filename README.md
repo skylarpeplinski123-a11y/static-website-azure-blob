@@ -1,113 +1,83 @@
 # static-website-azure-blob
 Hosting first Static Website with Azure
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Azure Blob Static Site</title>
-  <meta name="description" content="A fancy static website hosted in Microsoft Azure Blob Storage." />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="stars"></div>
-  <div class="glow glow-1"></div>
-  <div class="glow glow-2"></div>
+🚀 Azure Blob Static Website (Super Simple Guide)
 
-  <header class="hero">
-    <nav class="nav">
-      <div class="logo">☁ Azure Blob Site</div>
-      <a class="nav-btn" href="#learn">Learn More</a>
-    </nav>
+🎥 Watch this first (quick walkthrough):
+👉 https://www.loom.com/share/3414d32d8585444197ffe09edde77fef
 
-    <section class="hero-content">
-      <p class="tag">Static website • GitHub repo • Azure Blob</p>
-      <h1>
-        You did it.<br />
-        <span>Welcome to your fancy Azure static website.</span>
-      </h1>
-      <p class="subtext">
-        This site is made with plain HTML, CSS, and JavaScript so it is easy to upload
-        to Azure Blob Storage and easy to understand.
-      </p>
+🧠 What is this?
 
-      <div class="hero-buttons">
-        <a href="#cards" class="btn btn-primary">See the magic</a>
-        <a href="#steps" class="btn btn-secondary">Simple steps</a>
-      </div>
-    </section>
-  </header>
+This is a super simple static website hosted using:
 
-  <main>
-    <section id="cards" class="cards-section">
-      <div class="section-title">
-        <h2>Why this is cool</h2>
-        <p>It looks nice, but it is still simple.</p>
-      </div>
+Microsoft Azure Blob Storage
+HTML, CSS, JavaScript
+No servers needed
 
-      <div class="cards">
-        <article class="card">
-          <div class="card-icon">⚡</div>
-          <h3>Fast</h3>
-          <p>Static sites load quickly because there is no big server doing extra work.</p>
-        </article>
+Think of it like:
 
-        <article class="card">
-          <div class="card-icon">🧠</div>
-          <h3>Easy</h3>
-          <p>Only a few files. That means less confusion and easier fixing later.</p>
-        </article>
+putting website files into a magic online folder ☁️
 
-        <article class="card">
-          <div class="card-icon">☁</div>
-          <h3>Azure Ready</h3>
-          <p>Perfect for uploading into Azure Blob Storage static website hosting.</p>
-        </article>
-      </div>
-    </section>
+📁 What’s inside this repo?
+index.html   → the main page
+styles.css   → makes it look nice
+script.js    → adds small interactions
+404.html     → error page
+🧒 Step-by-step (explained like you're 5)
+🟢 Step 1 — Download these files
 
-    <section id="learn" class="highlight">
-      <div class="highlight-box">
-        <h2>Your website can live in the cloud</h2>
-        <p>
-          Put these files in Azure, and people can visit your site from a web link.
-        </p>
-        <button id="funButton" class="btn btn-primary">Press me</button>
-        <p id="funMessage" class="fun-message"></p>
-      </div>
-    </section>
+Click the green Code button → Download ZIP
+OR clone the repo
 
-    <section id="steps" class="steps-section">
-      <div class="section-title">
-        <h2>Super simple idea</h2>
-        <p>Think of it like putting drawings into a magic online folder.</p>
-      </div>
+🟢 Step 2 — Go to Azure
 
-      <div class="steps">
-        <div class="step">
-          <span>1</span>
-          <p>Make your website files.</p>
-        </div>
-        <div class="step">
-          <span>2</span>
-          <p>Turn on Static Website in Azure.</p>
-        </div>
-        <div class="step">
-          <span>3</span>
-          <p>Upload files to the cloud.</p>
-        </div>
-        <div class="step">
-          <span>4</span>
-          <p>Open your link and smile.</p>
-        </div>
-      </div>
-    </section>
-  </main>
+Open Microsoft Azure
 
-  <footer class="footer">
-    <p>Made for Azure Blob Static Website hosting ✨</p>
-  </footer>
+🟢 Step 3 — Create a Storage Account
 
-  <script src="script.js"></script>
-</body>
-</html>
+Search: Storage Accounts
+Click Create
+
+🟢 Step 4 — Turn on Static Website
+
+Inside your storage account:
+
+Click Static website
+Turn it ON
+
+Fill in:
+
+Index document name: index.html
+Error document path: 404.html
+
+Click Save
+
+🟢 Step 5 — Find the magic folder
+
+Azure creates a special container called:
+
+$web
+🟢 Step 6 — Upload your files
+
+Upload ALL of these into $web:
+
+index.html
+styles.css
+script.js
+404.html
+🟢 Step 7 — Open your website 🎉
+
+Azure gives you a link like:
+
+https://yourstorage.z13.web.core.windows.net/
+
+Click it → your site is LIVE
+
+⚠️ VERY IMPORTANT
+
+File names must match EXACTLY:
+
+index.html  ✅
+Index.html  ❌
+INDEX.HTML ❌
+
+Azure is case-sensitive.
