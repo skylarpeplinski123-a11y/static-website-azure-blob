@@ -27,8 +27,9 @@ What this teaches:
  
 
 ⚙️ Prerequisites
+
 -- Azure Subscription (Free Tier OK)
--- Completed Week 1 Modules
+
 -- Text Editor (Notepad / VS Code / TextEdit)
 
 🧾 Naming Convention
