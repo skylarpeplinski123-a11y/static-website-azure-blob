@@ -24,10 +24,12 @@ Storage Account
    $web container
       ↓
    index.html
+
 ⚙️ Prerequisites
- Azure Subscription (Free Tier OK)
- Completed Week 1 Modules
- Text Editor (Notepad / VS Code / TextEdit)
+-- Azure Subscription (Free Tier OK)
+-- Completed Week 1 Modules
+-- Text Editor (Notepad / VS Code / TextEdit)
+
 🧾 Naming Convention
 Resource Group: rg-lab01-[yourname]
 Storage Account: stlab01[yourname]
@@ -38,8 +40,11 @@ Region: East US
 lowercase only
 no special characters
 must be globally unique
+
 🛠️ Deployment Steps
+
 🔹 Phase 1: Create Resource Group
+
 Go to: https://portal.azure.com
 Search: Resource Groups
 Click + Create
@@ -52,26 +57,27 @@ Region → East US
 👉 Click Review + Create → Create
 
 🔹 Phase 2: Create Storage Account
+
 Search: Storage Accounts
 Click + Create
 
 Fill in:
-
-Resource Group → rg-lab01-[yourname]
-Name → stlab01[yourname]
-Region → East US
-Performance → Standard
-Redundancy → LRS
+--Resource Group → rg-lab01-[yourname]
+--Name → stlab01[yourname]
+--Region → East US
+--Performance → Standard
+--Redundancy → LRS
 
 👉 Click Review + Create → Create
 
 ⏱️ Wait → Click Go to resource
 
 🔹 Phase 3: Enable Static Website
-Go to Static website (left menu)
-Set → Enabled
-Index document: index.html
-Error document: 404.html
+
+--Go to Static website (left menu)
+--Set → Enabled
+--Index document: index.html
+--Error document: 404.html
 
 👉 Click Save
 
@@ -82,7 +88,7 @@ Error document: 404.html
 
 Create a file called:
 
-index.html
+--index.html
 
 Paste this:
 
