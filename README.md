@@ -115,7 +115,7 @@ index.html
 
 Paste this:
 
-```html
+ html
 <!DOCTYPE html>
 <html>
 <head>
