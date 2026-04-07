@@ -109,33 +109,11 @@ Error document: 404.html
 
 ## 🔹 Phase 4: Create Website File
 
-Create a file called:
 
-index.html
+I used a Large language model (LLM) to create a code that I could use for the website HTML. I used this as a start for what code I'd like for my page, "HTML file I can upload to Azure Blob Static Website hosting:" and then I went and prompted it the way I liked and copy and pasted into NotePad. 
 
-Paste this:
-
- html
-<!DOCTYPE html>
-<html>
-<head>
-<title>My First Cloud Site</title>
-<style>
-body {
-  font-family: sans-serif;
-  text-align: center;
-  margin-top: 50px;
-  background-color: #f0f0f0;
-}
-h1 { color: #0078d4; }
-</style>
-</head>
-<body>
-<h1>Hello from the Cloud!</h1>
-<p>This site is hosted on Azure Blob Storage.</p>
-<p>Deployed by: [Your Name]</p>
-</body>
-</html>
+Then create a file called:
+index.html (with the uploaded HTML file created and saved to desktop earlier from the NotePad)
 
 ---
 
