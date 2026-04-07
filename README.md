@@ -11,19 +11,20 @@ Deploy your first public-facing website in Azure using Blob Storage instead of a
 
 What this teaches:
 ☁️ PaaS (Platform as a Service)
+
 ⚡ Serverless hosting
+
 🧱 Infrastructure handled by Azure
+
 🎨 You focus only on content
-🧠 Architecture Overview
-User (Internet)
-      ↓
- Public URL
-      ↓
-Storage Account
-      ↓
-   $web container
-      ↓
-   index.html
+
+
+🧠 Architecture OverviewUser:
+
+(Internet) ↓ Public URL ↓ Storage Account ↓ $web container  ↓ index.html
+      
+ 
+ 
 
 ⚙️ Prerequisites
 -- Azure Subscription (Free Tier OK)
@@ -56,6 +57,7 @@ Region → East US
 
 👉 Click Review + Create → Create
 
+
 🔹 Phase 2: Create Storage Account
 
 Search: Storage Accounts
@@ -72,6 +74,7 @@ Fill in:
 
 ⏱️ Wait → Click Go to resource
 
+
 🔹 Phase 3: Enable Static Website
 
 --Go to Static website (left menu)
@@ -84,11 +87,11 @@ Fill in:
 📌 Copy your Primary Endpoint URL
 (this is your live website)
 
+
 🔹 Phase 4: Create Website File
 
-Create a file called:
+Create a file called: index.html
 
---index.html
 
 Paste this:
 
@@ -112,28 +115,39 @@ h1 { color: #0078d4; }
 <p>Deployed by: [Your Name]</p>
 </body>
 </html>
+
+
+
 🔹 Phase 5: Upload to Azure
+
+
 Go to Containers
 Open $web
 Click Upload
 Select index.html
 Upload
+
+
+
 🔹 Phase 6: Validate 🚀
+
+
 Open your Primary Endpoint URL
-You should see:
-Hello from the Cloud!
+You should see:Hello from the Cloud!
+
 
 🎉 You just deployed a serverless website
 
 ⚠️ Troubleshooting
+
 ❌ 404 Error
-File must be exactly:
-index.html
-Must be inside:
-$web
+File must be exactly: index.html
+
+Must be inside: $web
+
 ❌ Storage Name Taken
-Add numbers:
-stlab01yourname99
+Add numbers:stlab01yourname99
+
 🧹 Clean Up
 Go to Resource Groups
 Select: rg-lab01-[yourname]
